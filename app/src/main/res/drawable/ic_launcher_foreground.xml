@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Database icon outline -->
+    <group
+        android:translateX="24"
+        android:translateY="24">
+
+        <!-- Top cylinder -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M30,0 C46.569,0 60,6.716 60,15 C60,23.284 46.569,30 30,30 C13.431,30 0,23.284 0,15 C0,6.716 13.431,0 30,0z" />
+
+        <!-- Middle cylinder -->
+        <path
+            android:fillColor="#E0E0E0"
+            android:pathData="M0,15 L0,45 C0,53.284 13.431,60 30,60 C46.569,60 60,53.284 60,45 L60,15" />
+
+        <!-- Bottom cylinder -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M0,45 L0,50 C0,58.284 13.431,65 30,65 C46.569,65 60,58.284 60,50 L60,45" />
+
+    </group>
+</vector>
