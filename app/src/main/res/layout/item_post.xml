@@ -5,32 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
-    android:layout_marginBottom="4dp"
     android:foreground="?attr/selectableItemBackground"
-    app:cardElevation="2dp"
-    app:cardCornerRadius="8dp">
+    app:cardElevation="1dp"
+    app:cardCornerRadius="12dp"
+    app:strokeWidth="0.5dp"
+    app:strokeColor="@color/divider"
+    app:contentPadding="14dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="12dp">
+        android:layout_height="wrap_content">
 
-        <!-- ID Bullet (lingkaran dengan nomor) -->
         <TextView
             android:id="@+id/tvId"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:gravity="center"
             android:text="1"
             android:textColor="@android:color/white"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:background="@drawable/circle_id_bg"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" />
 
-        <!-- Title -->
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="0dp"
@@ -42,11 +40,11 @@
             android:textColor="@color/textPrimary"
             android:textSize="15sp"
             android:textStyle="bold"
+            android:lineSpacingExtra="2dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/tvId"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- User ID -->
         <TextView
             android:id="@+id/tvUserId"
             android:layout_width="wrap_content"
@@ -59,14 +57,23 @@
             app:layout_constraintStart_toStartOf="@id/tvTitle"
             app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
-        <!-- Body Content -->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/divider"
+            app:layout_constraintTop_toBottomOf="@id/tvUserId"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent" />
+
         <TextView
             android:id="@+id/tvBody"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="10dp"
             android:ellipsize="end"
-            android:lineSpacingExtra="2dp"
+            android:lineSpacingExtra="3dp"
             android:maxLines="3"
             android:text="Post body content..."
             android:textColor="@color/textSecondary"
@@ -74,7 +81,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/tvTitle"
-            app:layout_constraintTop_toBottomOf="@id/tvUserId" />
+            app:layout_constraintTop_toBottomOf="@id/divider" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

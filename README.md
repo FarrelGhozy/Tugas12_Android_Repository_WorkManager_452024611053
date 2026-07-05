@@ -24,8 +24,10 @@ Aplikasi ini adalah implementasi **Repository Pattern** dan **WorkManager** pada
 | **Retrofit + Gson** | HTTP client untuk komunikasi dengan REST API JSONPlaceholder |
 | **CoroutineWorker** | Background task menggunakan CoroutineWorker (asinkron, aman untuk suspend functions) |
 | **PeriodicWorkRequest** | Refresh data otomatis setiap 15 menit dengan constraints UNMETERED + Charging |
+| **OneTimeWorkRequest** | Trigger langsung saat aplikasi dibuka untuk demonstrasi logcat |
 | **SwipeRefreshLayout** | Pull-to-refresh manual untuk trigger sinkronisasi data |
 | **Reactive UI** | Data dari Room menggunakan Flow — UI otomatis update saat data berubah |
+| **Material Design UI** | Tampilan modern dengan MaterialCardView, gradient avatar, dan CircularProgressIndicator |
 
 ### Arsitektur
 

@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch {
             viewModel.posts.collectLatest { posts ->
                 adapter.submitList(posts)
-                binding.tvEmptyState.visibility =
+                binding.layoutEmptyState.visibility =
                     if (posts.isEmpty()) android.view.View.VISIBLE else android.view.View.GONE
             }
         }

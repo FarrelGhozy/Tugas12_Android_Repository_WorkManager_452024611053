@@ -58,6 +58,21 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
         // Jadwalkan WorkManager untuk periodic refresh
         schedulePeriodicRefresh()
+
+        // Trigger immediate one-time worker untuk bukti logcat
+        triggerImmediateWorker()
+    }
+
+    /**
+     * One-time worker tanpa constraints untuk keperluan demonstrasi logcat.
+     */
+    private fun triggerImmediateWorker() {
+        val immediateRequest = androidx.work.OneTimeWorkRequestBuilder<com.tugas12.repository.worker.RefreshDataWorker>()
+            .addTag("immediate_refresh")
+            .build()
+
+        androidx.work.WorkManager.getInstance(getApplication())
+            .enqueue(immediateRequest)
     }
 
     /**
