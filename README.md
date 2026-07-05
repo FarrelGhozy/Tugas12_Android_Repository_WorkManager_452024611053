@@ -2,11 +2,11 @@
 
 ## Identitas
 
-| | |
-|---|---|
-| **Nama** | Farrel Ghozy |
-| **NIM** | 452024611053 |
-| **Mata Kuliah** | Pemrograman Perangkat Bergerak |
+| |                                  |
+|---|----------------------------------|
+| **Nama** | Farrel Ghozy Affifudin           |
+| **NIM** | 452024611053                     |
+| **Mata Kuliah** | Pemrograman Perangkat Bergerak   |
 | **Topik** | Repository Pattern & WorkManager |
 
 ---
