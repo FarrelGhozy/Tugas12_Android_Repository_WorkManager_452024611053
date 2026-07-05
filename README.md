@@ -67,22 +67,20 @@ Aplikasi ini adalah implementasi **Repository Pattern** dan **WorkManager** pada
 
 ## 📸 Screenshot Aplikasi
 
-> *Screenshot akan ditambahkan setelah aplikasi dijalankan di perangkat.*
-
-<!-- TODO: Tambahkan screenshot setelah build & install -->
-| Tampilan Utama | Data Ter-cache | Pull-to-Refresh |
-|:--------------:|:--------------:|:---------------:|
-| ![Utama](screenshots/main_screen.png) | ![Cache](screenshots/cached_data.png) | ![Refresh](screenshots/refresh.png) |
+| Tampilan Utama (Data dari API) | Data Ter-cache di Room DB |
+|:------------------------------:|:-------------------------:|
+| ![Utama](screenshots/main_screen.png) | ![Cache](screenshots/cached_data.png) |
 
 ---
 
 ## 📋 Logcat — Eksekusi Worker
 
-> *Screenshot Logcat akan ditambahkan setelah aplikasi dijalankan.*
+Berikut adalah bukti bahwa `RefreshDataWorker` (CoroutineWorker) berhasil dieksekusi oleh sistem WorkManager dan mengembalikan `Result.success()`:
 
 ```
-2026-07-02 12:30:00.123 D/RefreshDataWorker: >>> RefreshDataWorker dimulai...
-2026-07-02 12:30:02.456 D/RefreshDataWorker: >>> RefreshDataWorker: SUCCESS — Data berhasil di-refresh dari API ke lokal DB
+--------- beginning of main
+07-05 12:01:10.147 D/RefreshDataWorker: >>> RefreshDataWorker dimulai...
+07-05 12:01:10.389 D/RefreshDataWorker: >>> RefreshDataWorker: SUCCESS — Data berhasil di-refresh dari API ke lokal DB
 ```
 
 ---
