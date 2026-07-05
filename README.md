@@ -73,7 +73,6 @@ Aplikasi ini adalah implementasi **Repository Pattern** dan **WorkManager** pada
 |:--------------------------------:|:----------------------------:|
 | ![Cache](screenshots/cached_data.png) | ![Refresh](screenshots/main_screen.png) |
 
-> **Penjelasan:** `cached_data.png` diambil saat aplikasi dibuka kembali setelah data pernah di-fetch sebelumnya — data langsung tampil dari **Room database** tanpa perlu request jaringan (offline-first). `main_screen.png` diambil setelah proses auto-refresh dari API selesai — data diperbarui dan tetap sama (karena sumber API sama). Kedua kondisi membuktikan **Repository Pattern**: ViewModel tidak peduli data dari cache lokal atau jaringan, cukup panggil repository.
 
 ---
 
@@ -183,11 +182,3 @@ app/src/main/java/com/tugas12/repository/
 
 ---
 
-## 📚 Referensi
-
-- [Google Developer Pathway — Lesson 12: Repository & WorkManager](https://developer.android.com/courses/pathways/android-development-with-kotlin-12?hl=id)
-- [Android Developers — Guide to App Architecture](https://developer.android.com/topic/architecture)
-- [Android Developers — WorkManager Overview](https://developer.android.com/topic/libraries/architecture/workmanager)
-- [Room Database Documentation](https://developer.android.com/training/data-storage/room)
-- [Retrofit Documentation](https://square.github.io/retrofit/)
-- [JSONPlaceholder — Fake API for Testing](https://jsonplaceholder.typicode.com/)
