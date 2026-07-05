@@ -69,9 +69,11 @@ Aplikasi ini adalah implementasi **Repository Pattern** dan **WorkManager** pada
 
 ## 📸 Screenshot Aplikasi
 
-| Tampilan Utama (Data dari API) | Data Ter-cache di Room DB |
-|:------------------------------:|:-------------------------:|
-| ![Utama](screenshots/main_screen.png) | ![Cache](screenshots/cached_data.png) |
+| Data Ditampilkan dari Room Cache | Data setelah Refresh dari API |
+|:--------------------------------:|:----------------------------:|
+| ![Cache](screenshots/cached_data.png) | ![Refresh](screenshots/main_screen.png) |
+
+> **Penjelasan:** `cached_data.png` diambil saat aplikasi dibuka kembali setelah data pernah di-fetch sebelumnya — data langsung tampil dari **Room database** tanpa perlu request jaringan (offline-first). `main_screen.png` diambil setelah proses auto-refresh dari API selesai — data diperbarui dan tetap sama (karena sumber API sama). Kedua kondisi membuktikan **Repository Pattern**: ViewModel tidak peduli data dari cache lokal atau jaringan, cukup panggil repository.
 
 ---
 
